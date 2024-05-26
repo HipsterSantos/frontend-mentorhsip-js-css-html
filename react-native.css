@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'react-native-font' ;
+}
+@font-face {
+    font-family:'react-native-font' ;
+    src: url(/react-native-font.woff2);
+}
+.main-container{
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    background: #20232A;
+    color: #fff;
+}
+nav .ukraine-info{
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    padding: 1em;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: auto .4em;
+}
+nav ul li.logo-nav{
+    display: flex;
+    margin-right: auto;
+    margin-left: .3em;
+}
+nav ul li.logo-nav .inner-logo{
+    display: flex;
+}
+nav ul li.logo-nav .inner-log >*{
+    margin: auto;
+}
+nav ul li.logo-nav .inner-logo svg{
+    scale: .4;
+}
+
+/* trigger indivudually instead catching the container */
+
+nav ul li.item-with-dropdown .dropdwon-caret{
+    display:none;
+}
