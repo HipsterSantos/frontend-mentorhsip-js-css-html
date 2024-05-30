@@ -4,16 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dealing with forms </title>
+   
 </head>
 <body>
     login teste
-    <form action="http://localhost:8000/raw-html" method="get">
-        <input type="text" name="" placeholder="Add your name please" > <br>
-        <input type="email" name="eamil" placeholder="exemple@servidor.com" id="email"><br>
-        <input type="password" placeholder="Minimum 8 digits" name="password" id="your-password"><br>
-        <button type="submit">
-            Logar
-        </button>
+    
+    <input type="checkbox" name="checkbox" value="yes"/>
+    <form>
+        <div class="user-sign-up">
+           <label for="user-name-id">Username</label>
+            <p>
+                <input type="text" name="username" onchange="printName()" id="user-name-id" placeholder="Insere o seu nome">
+            </p> 
+            <input type="email" name="usermail" id="user-mail" placeholder="exemplo@server.domain">    <br>
+            <input type="tel" value="my text is here" name="number" id="" placeholder="your phone number"> <br>
+            <!-- <select name="gender" id="user-gender" >
+                Selecione seu Genero
+                <option value="masculino">Male</option>
+                <option value="feminino">female</option>
+            </select><br>
+            <label for="check-term">
+                Concorda em aceitar todos os termos
+            </label>
+            <p>
+                <input type="checkbox" name="check-term" id="check-term">
+            </p>
+            <p><input type="password" name="" placeholder="palavra chave" id=""></p>
+            <input type="button" name="button-1" value="Click here"><button name="button-2">Click me </button>
+            <input type="submit" name="button-3" value="Enviar no servidor">
+            <br>
+            <input type="radio" value="Ice cream blue" name="ice-type-1" id="">Ice cream Blue <br>
+            <input type="radio" value="Ice cream green" name="ice-type-2" id="">Ice cream green <br>
+            <input type="radio" value="Ice cream yellow" name="ice-type-4" id=""> Ice cream yellow <br>
+            <br> -->
+            <div>
+                <h3>Welcome to my site</h3>
+                <input type="email" name="username1" id="useremail" required>
+                <input type="password" name="password1" id="password" required>
+                <button id="btn" type="submit">Logar</button>
+            </div>
+        </div>
     </form>
+    <script>
+        //capturar o email 
+        // capturar palavra pass 
+        // verficar se e igual 
+        // email = email.email@email.domain
+        //1234
+
+        const email = document.getElementById('useremail')
+        const password = document.getElementById('password')
+
+        const button = document.getElementById('btn')
+        button.addEventListener('click',()=>{
+            if(email.value === 'email.email@email.domain' && password.value === '1234'){
+                location.href = "https://facebook.com"
+                alert('User logged')
+            }else{
+                alert('User not logged')
+                location.href = location.href
+
+            }
+
+        })
+        console.log('\nemail-password--', email,password)
+        /*
+            const [name] = document.getElementsByName('username')
+            const [email] = document.getElementsByName('usermail')
+            //get value pelo Id , Class , pelo atribute (selector )
+            const name2  = document.querySelector('.username')
+            const name3  = document.getElementsByClassName('.username')// input 
+            
+            console.log('name by target.value -- ',name?.target?.value)
+            console.log(' name now is ', name?.innerHTML);
+            console.log(' name now is ', name?.textContent);
+            console.log(' name now is ', name?.innerText);
+
+            function printName(event){
+                debugger
+                console.log('\nevent---',event)
+            }*/
+    </script>
+    <script src></script>
 </body>
 </html>
