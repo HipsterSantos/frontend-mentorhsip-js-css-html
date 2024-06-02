@@ -1,84 +1,77 @@
+
+
+
 *{
-    color: #ffff;
+    color: #fff;
 }
 
 
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
+
 
 
 .main-box {
     width: 700px;
-    height: 600px;
-    background: rgba(20, 20, 20, 0.908);
+    height: 550px;
+    background: #101010e8;
+    border-radius: 10px;
+}
+
+.main-title{
+    display: flex;
+}
+
+.main-title p{
+    font-family: sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.main-title span{
+    margin-top: 10px;
+    margin-left: 450px;
+}
+
+.image-center img{
+    width: 170px;
+    margin-top: 60px;
+    margin-left: 35%;
+}
+
+
+.first-paragraph{
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.second-paragraph{
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.buton-main{
+    margin-top: 120px;
+    margin-left: 400px;
+}
+
+.reminder-button{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    background: #3f3d3d;
+    border-radius: 5px;
+}
+
+.update-button{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    background: #8724f1;
+    border-radius: 5px;
 }
