@@ -21,7 +21,9 @@
                 height: 80vh;
                 background: url(./first-bg.svg), url(./second-bg.svg);
                 background-repeat: no-repeat;
-                background-position: 17em -1em, -38em -22em;
+                /*background-position: 17em -1em, -38em -22em;*/
+                background-size: cover, cover;
+
         }
         .sub-hero-2{
                 
@@ -32,7 +34,39 @@
         .overlay{
             width: inherit;
             height: inherit;
-            background: linear-gradient(108deg, #D53C3C 9%, #EDA45B 55%);
+            /*background: linear-gradient(108deg, #D53C3C 9%, #EDA45B 55%);*/
+            background: linear-gradient(
+                179deg, 
+                rgba(235, 163, 97, .3) 9%, 
+                rgba(235, 162, 97, .1) 38%, 
+                rgba(179, 30, 35, .4) 70%);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+        p{
+            font-size: .7em;
+    font-family: gotham-light;
+    color: #fff;
+    text-align: justify;
+    width: 37%;
+    position: relative;
+    z-index: 200;
+    padding-left: 3em;
+        }
+        h2{
+            width: 46%;
+            color: #fff;
+            font-family: gotham-bold;
+            position: relative;
+            z-index: 100;
+            font-size: 30pt;
+            line-height: 1.3;
+            margin-left: 1em;
+            padding-top: 1em;
         }
     </style>
 </head>
