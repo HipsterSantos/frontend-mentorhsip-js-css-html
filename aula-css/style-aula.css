@@ -1,0 +1,13 @@
+/* More specific selectors (id and class) come first */
+#page-title {
+    font-family: sans-serif;
+  }
+  
+  .title {
+    font-family: monospace;
+  }
+  
+  /* Less specific selector (tag) comes last */
+  h1 {
+    font-family: serif;
+  }
