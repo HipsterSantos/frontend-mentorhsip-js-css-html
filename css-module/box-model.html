@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model , positions, background</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .hero-section{
+            width: inherit;
+            height: 80vh;
+            background: url('./martin-marek.jpg'),url(./anders-jilden.jpg);
+        }
+        
+        .sub-hero{
+                
+                width: inherit;
+                height: 80vh;
+                background: url(./first-bg.svg), url(./second-bg.svg);
+                background-repeat: no-repeat;
+                background-position: 17em -1em, -38em -22em;
+        }
+        .sub-hero-2{
+                
+                width: inherit;
+                height: 80vh;
+                background: red;
+        }
+        .overlay{
+            width: inherit;
+            height: inherit;
+            background: linear-gradient(108deg, #D53C3C 9%, #EDA45B 55%);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <h2>A new to make
+            Thins easier</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta quos adipisci corrupti, ut, eveniet dolor voluptatem optio, aperiam culpa quo nemo similique quidem maiores laboriosam obcaecati dolorem deleniti? Numquam, asperiores?</p>
+    </div>
+    <div class="sub-hero">
+
+    </div>
+    <div class="sub-hero-2">
+        
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur eveniet laboriosam quod nostrum. Explicabo, impedit voluptatum? Atque quasi ab modi perspiciatis consequatur, qui deleniti, illum, cum minima vitae quae.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur eveniet laboriosam quod nostrum. Explicabo, impedit voluptatum? Atque quasi ab modi perspiciatis consequatur, qui deleniti, illum, cum minima vitae quae.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur eveniet laboriosam quod nostrum. Explicabo, impedit voluptatum? Atque quasi ab modi perspiciatis consequatur, qui deleniti, illum, cum minima vitae quae.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur eveniet laboriosam quod nostrum. Explicabo, impedit voluptatum? Atque quasi ab modi perspiciatis consequatur, qui deleniti, illum, cum minima vitae quae.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur eveniet laboriosam quod nostrum. Explicabo, impedit voluptatum? Atque quasi ab modi perspiciatis consequatur, qui deleniti, illum, cum minima vitae quae.</h1>
+</body>
+</html>
