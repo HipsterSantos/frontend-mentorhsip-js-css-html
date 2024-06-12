@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+        li{
+            color: #fff;
+        }
+        .container{
+            display: flex;
+        }
+        li:nth-child(odd){
+            background: red;
+        }
+        li:nth-child(even) {
+            background: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+    <main>
+      
+    <div class="container">
+       
+        <li>flex-directions</li>
+        <li>flex-wrap</li>
+        <li>justify-content</li>
+        <li>align-items</li>
+        <li>flex-wrap</li>
+        <li>align-content</li>
+        <p>end of list </p>
+
+    </div>
+
+    <!-- <div class="flex-items-container">
+        <h3>Flex-items properties</h3>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basis</li>
+        <li>order</li>
+        <li>align-self</li>
+        
+    </div> -->
+    </main>
+  </body>
+</html>
