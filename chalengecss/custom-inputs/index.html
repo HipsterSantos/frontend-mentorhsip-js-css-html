@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom inputs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+        }
+        .field-controller{
+            flex: 5;
+            display: flex;
+            width: 60%;
+            margin: 2em;
+            border: 1.5px solid #aca5a5;
+            padding: 0 .7em;
+            border-radius: .3em;
+        }
+        .left-side{
+            flex: 2;
+            background: rgb(91, 91, 218);
+            color: #fff;
+        }
+        form{
+            flex: 3;
+        }
+        .field-controller input{
+            width: 50%;
+        }
+        .usa-flag{
+            margin-left: .3em;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        span{
+            margin: auto 0;
+        }
+        .custom-input>input{
+            outline: none;
+            padding-left: 1em;
+            border: none;
+            height: 6vh;
+            width: 100%;
+            /* width: 92vw; */
+            margin-left: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam laborum error 
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cum quasi enim quia beatae alias placeat deleniti assumenda error, sunt eveniet aliquid accusantium ratione quisquam quaerat perspiciatis tempora voluptas libero?</p>
+        </div>
+        <form action="">
+            <div class="custom-input">
+                <i class="usa-flag">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFF" viewBox="0 0 1235 650"><path d="M0 0h1235v650H0"/><path stroke="#b22234" stroke-dasharray="50" stroke-width="2470" d="M0 0v651"/><path fill="#3c3b6e" d="M0 0h494v350H0"/><g id="e"><g id="d"><g id="f"><g id="c"><g id="b"><path id="a" d="m30 50.6 12-36 12 36-30.8-22H61"/><use xlink:href="#a" x="82"/></g><use xlink:href="#b" x="164"/><use xlink:href="#a" x="328"/></g><use xlink:href="#a" x="410"/></g><use xlink:href="#c" x="41" y="35"/></g><use xlink:href="#d" y="70"/></g><use xlink:href="#e" y="140"/><use xlink:href="#f" y="280"/></svg>
+                </i>
+                <span class=" caret material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <input type="text" name="" placeholder="custom input" id="">
+            </div>
+            <div class="field-controller">
+                <input type="text" name="" placeholder="add something" id="">
+                <input type="email" name="" placeholder="your email here" id="">
+            </div>
+    
+        </form>
+    </div>
+</body>
+</html>
