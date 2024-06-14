@@ -76,7 +76,7 @@ body{
 }
 
 .box-comment{
-    background: blue;
+    background: #0000ff;
     color: white;
     border-radius: 7px;
     width: 75%;
@@ -131,7 +131,15 @@ body{
 }
 
 #nome-header{
-    
+  
+}
+
+.submit-button{
+    background: #0066ff;
+    border-radius: 7px;
+    border: none;
+    padding: 5px;
+    color: white;
 }
 
 
