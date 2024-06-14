@@ -45,45 +45,62 @@
                 </div>
             </div>
             <div class="left-side">
-                <span class="head-image"></span>
-                <h2 class="left-title">Let's get started</h2>
+
+                <div class="header-form">
+                    <span class="head-image"></span>
+                    <h2 class="left-title">Let's get started</h2>
+                </div>
 
                 <div class="formulario">
                     <form action="">
-                        <label class="label-form" for="name">First name</label>
-                        <input class="nome-form" type="text" name="primeiro_nome">
-                        <label class="label-form" for="Last Name">Last name</label>
-                        <input type="text" name="segundo_nome">
+                        <div id="nome-header">
+                            <label class="label-form" for="name">First name</label>
+                            <input class="nome-form" type="text" name="primeiro_nome">
+                       
+                            <label class="label-form" for="Last Name">Last name</label>
+                            <input type="text" name="segundo_nome">
+                        </div>
 
-                        <label class="label-form" for="email">Email</label>
-                        <input type="email" name="email">
+                        <div>
+                            <label class="label-form" for="email">Email</label>
+                            <input type="email" name="email">
+                        </div>
 
-                        <label class="label-form" for="country">Country of residence</label>
-                        <select name="country" id="country-residence">
-                            <option value="none">---</option>
-                            <option value="AGO">Angola</option>
-                            <option value="USA">United States</option>
-                            <option value="BRZ">Brazil</option>
-                            <option value="UEA">Emirates</option>
-                            <option value="CNG">Congo</option>
-                            <option value="NGR">Nigéria</option>
-                        </select>
-                        <label class="label-form" for="states">States</label>
-                        <select name="state" id="cidade">
-                            <option value="LDA">Luanda</option>
-                            <option value="LA">Los Angeles</option>
-                            <option value="SP">Brazilia</option>
-                            <option value="DB">Dubai</option>
-                            <option value="KSH">Kinshassa</option>
-                            <option value="LGO">Lagos</option>
-                        </select>
-                        <label class="label-form" for="phone">Phone number</label>
-                        <input type="tel">
+                        <div id="coutry-state">
+                            <label class="label-form" for="country">Country of residence</label>
+                            <select name="country" id="country-residence">
+                                <option value="none">---</option>
+                                <option value="AGO">Angola</option>
+                                <option value="USA">United States</option>
+                                <option value="BRZ">Brazil</option>
+                                <option value="UEA">Emirates</option>
+                                <option value="CNG">Congo</option>
+                                <option value="NGR">Nigéria</option>
+                            </select>
                         
-                        <label class="label-form" for="password">Password</label>
-                        <input type="password">
+                            <label class="label-form" for="states">States</label>
+                            <select name="state" id="cidade">
+                                <option value="LDA">Luanda</option>
+                                <option value="LA">Los Angeles</option>
+                                <option value="SP">Brazilia</option>
+                                <option value="DB">Dubai</option>
+                                <option value="KSH">Kinshassa</option>
+                                <option value="LGO">Lagos</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="label-form" for="phone">Phone number</label>
+                            <input type="tel">
 
-                       <button class="submit-button" type="submit">GET STARTED</button>
+                        </div>
+                        <div>
+                            <label class="label-form" for="password">Password</label>
+                            <input type="password">
+                        </div>
+
+                        <div>
+                            <button class="submit-button" type="submit">GET STARTED</button>
+                        </div>
 
                     </form>
                 </div>

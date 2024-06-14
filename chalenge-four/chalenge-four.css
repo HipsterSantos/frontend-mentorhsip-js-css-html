@@ -42,12 +42,10 @@ body{
 }
 
 .left-side{
-   
     width: 60%;
     border-radius: 0 7px 7px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -109,6 +107,7 @@ body{
     padding-bottom: 25px;
     text-align: left;
     color: black;
+    margin-left: 50px;
 
 }
 
@@ -117,12 +116,22 @@ body{
     height: 65%;
     width: 75%;
     padding: 10px;
+    margin-left: 50px;
 }
 
 .label-form{
     font-size: 9px;
     color: #4e4d4d;
 }
+ 
+.formulario div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
 
+#nome-header{
+    
+}
 
 
