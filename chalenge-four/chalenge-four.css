@@ -65,7 +65,7 @@ body{
 
 .comment-main p{
     font-size: 10px;
-    font-weight: 100;
+    font-weight: 200;
     margin-top: 20px;
 
 }
@@ -94,7 +94,7 @@ body{
 
 .box-comment p{
     font-size: 9px;
-    font-weight: 100;
+    font-weight: 200;
     margin-bottom: 15px;
 }
 
@@ -106,11 +106,16 @@ body{
 .comment-name{
     padding: 5px;
     margin-right: 8px;
+}
 
+.comment-name p{
+    font-size: 11px;
+    font-weight: 300;
 }
 
 .comment-star p{
     color: yellow;
+    font-size: 17px;
 }
 
 
