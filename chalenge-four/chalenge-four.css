@@ -42,9 +42,13 @@ body{
 }
 
 .left-side{
-    background: chocolate;
+   
     width: 60%;
     border-radius: 0 7px 7px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .logo {
@@ -99,3 +103,26 @@ body{
 .info-user{
     display: flex;
 }
+
+.left-title{
+    font-size: 18px;
+    padding-bottom: 25px;
+    text-align: left;
+    color: black;
+
+}
+
+.formulario{
+    background: white;
+    height: 65%;
+    width: 75%;
+    padding: 10px;
+}
+
+.label-form{
+    font-size: 9px;
+    color: #4e4d4d;
+}
+
+
+
