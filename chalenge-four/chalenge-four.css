@@ -100,7 +100,19 @@ body{
 
 .info-user{
     display: flex;
+    align-items: center;
 }
+
+.comment-name{
+    padding: 5px;
+    margin-right: 8px;
+
+}
+
+.comment-star p{
+    color: yellow;
+}
+
 
 .left-title{
     font-size: 18px;
@@ -138,8 +150,10 @@ body{
     background: #0066ff;
     border-radius: 7px;
     border: none;
-    padding: 5px;
+    padding: 10px;
     color: white;
+    cursor: pointer;
+    
 }
 
 
