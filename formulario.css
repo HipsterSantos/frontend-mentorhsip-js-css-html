@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #D2D8DF;
+}
+
+.main-form {
+  display: flex;
+  max-width: 68em;
+  margin: auto;
+  margin-top: 5em;
+  padding-bottom: 5em;
+}
+
+.side-1 {
+  background-color: #005EFF;
+  flex: 1;
+  height: 54em;
+  color: white;
+  padding: 2em 3em;
+  border-radius: 1.8em 0 0 1.8em;
+}
+
+.side-1  h4 {
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-left: 2em;
+  padding-bottom: 10em;
+
+}
+
+.side-1  h1 {
+  font-size: 2.3em;
+  line-height: 1.2em;
+  padding-bottom: 1em;
+}
+
+.side-1 > p {
+  text-align: justify;
+  font-size: .9em;
+  padding-bottom: 9.5em;
+}
+
+.inside-info {
+  background-color: #004CDF;
+  border-radius: 14px;
+  padding: 25px;
+
+}
+
+.inside-info h3 {
+  font-size: 15px;
+  padding-bottom: 18px;
+}
+
+.inside-info p {
+  line-height: 20px;
+  font-size: 12px;
+  padding-bottom: 30px;
+}
+
+.photo-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.picture {
+  border-radius: 47%;
+  padding: 8px 12px; 
+  
+}
+
+.pic-side {
+  display: flex;
+  align-items: center;
+}
+
+.btn-load {
+  text-align: center;
+  padding: 28px;
+}
+
+/* styling other side of form */
+
+.side-2 {
+  background-color: #FFFFFF;
+  flex: 1;
+  width: 100vw; 
+  height: 54em;
+  color: black;
+  padding: 3.5em 3em;
+  border-radius: 0 1.8em 1.8em 0;
+}
+
+.styling-up {
+  display: flex;
+  justify-content: space-between;
+  gap: 20;
+  padding-bottom: 4em;
+}
+
+.styling-up > div {
+  border: 1px solid #D4DDEB;
+  width: 8.8em;
+}
+
+.side-2 h2 {
+  padding: 0 2em;
+}
+
+.side-name {
+  display: flex;
+  gap: 2em;
+  padding-top: 3em;
+  padding: .3em 3.8em;
+  line-height: 2.8em;
+}
+
+.side-name > div input {
+  height: 3em;
+  border: 3px solid #D4DDEB;
+  border-radius: .5em;
+  padding: .3em; 
+}
+
+.mail-box input {
+  height: 3em;
+  border: 3px solid #D4DDEB;
+  border-radius: .5em;
+  padding: .3em; 
+  width: 28.8em;
+}
+
+.mail-box p {
+  padding: 0 .4em; 
+}
+
+.mail-box {
+  line-height: 2.5em;
+  padding: .9em 3.7em; 
+}
+
+.residence {
+  display: flex;
+  gap: 2em;
+  padding: 1em 3.5em;
+  line-height: 2.8em;
+}
+
+.residence > div input {
+  height: 3em;
+  padding: 0 .9em;
+  width: 9em;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.part-one .part-two {
+  display: flex;
+  justify-content:space-between;
+}
+
+.part-one, .part-two  {
+  border: 3px solid #D4DDEB;
+  border-radius: .5em;
+  width: 11.1em;
+ 
+}
+
+.phone-pass {
+  padding: 0 3.4em;
+ 
+}
+
+.phone-pass > div input {
+  height: 3em;
+  padding: 0 .9em;
+  width: 9em;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.phone-pass > label {
+  line-height: 2.8em;
+  padding: 1em .5em;
+}
+
+.number, .pass {
+  height: 3em;
+  border: 3px solid #D4DDEB;
+  border-radius: .5em;
+  padding: .3em ; 
+  width: 24.5em;
+}
+
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #005EFF;
+  border-radius: .4em;
+  margin: 55px;
+  
+ 
+}
+
+.btn1 a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-align: center; 
+  padding: 1em;
+
+  
+  
+}
+
