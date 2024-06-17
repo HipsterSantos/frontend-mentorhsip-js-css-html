@@ -1,0 +1,52 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.user-1{
+    background: #EF5656;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.user-2{
+    background: #2B6ED9;
+    grid-column: 2/3;
+    grid-row: 2/2;
+}
+.user-3{
+    
+    background: #CFE574;
+    grid-column: 2/2;
+    grid-row: 2/3;
+}
+.user-4{
+    background: #38312F;
+    grid-column:2/3 ;
+    grid-row: 2/2;
+
+}
+
+
+.grid-container-two{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 5fr;
+}
+.toolbar{
+    background: red;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.aside-content{
+    background: blue;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+.left-side-menu{
+    background: yellow;
+    grid-column:1/2 ;
+    grid-row: 1/3;
+
+}
