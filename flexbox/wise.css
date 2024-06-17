@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 4em;
+    gap: 4px;
+    height: 7em;  
+}
+
+.menu1, .menu2 {
+    display: flex;
+    align-items: center;   
+    gap: 28px;
+}
+
+.container > div ul {
+    list-style: none;
+    display: flex;
+}
+
+.container > div a {
+    display: block;
+    text-decoration: none;
+    color:rgb(22, 51, 0);
+    padding: 12px 14px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inter, Helvetica, Arial, sans-serif;
+}
+
+.menu1 .style1, .style2 {
+    background-color: #80E142;
+    border-radius: 28px;
+    padding: 3px 16px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 4.49em; 
+    gap: 20px;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+.main-content .sect1, .sect2 {
+    flex: 1;
+}
+
+.main-content .sect1 h1 {
+    margin-top: 50px;
+    font-size: 81.8571px;
+    text-transform: uppercase;
+}
+
+.main-app {
+    display: flex;
+    gap: 4px;
+    padding-top: 50px;
+
+}
+
+.main-content .sect1 p {
+    display: block;
+    font-size: 18px;
+    height: 98px;
+    font-weight: 600;
+    line-height: 26px;
+    padding-top: 20px;
+}
+
+.main-content .sect2 { 
+    background-color: #ffffff; 
+    padding: 25px;
+    border-radius: 38px; 
+    justify-content: center;
+    box-shadow: 0 1px 2px 1px black; 
+    height: 43em;
+}
+
+.main-content .sect2 .form1 {
+   display: flex;
+   padding: 4px 40px;
+   height: 6em;
+   
+}
+
+.main-content .sect2 p {
+    padding: 2px 35px;
+    font-size: 18px;   
+ }
+
+.main-content .sect2 form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 4px 14px;
+    width: 30em;
+    border-radius: 8px;
+ }
+
+ .main-content .sect2 input, label, a {
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-weight: 600;
+    color:rgb(14, 15, 12);
+    text-decoration: none;  
+ }
+
+ .main-content .calc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 16px;
+ }
+
+ .main-content .calc ul {
+    list-style: none;
+ }
+ 
+ .main-content .calc-1 {
+    padding: 18px 40px;
+    font-weight: 600;
+    line-height: 30px;
+ }
+ 
+ .calc-1-2 a {
+    text-decoration: underline;
+    font-size: 16px;
+ }
+
+ .main-content .calc-2 {
+    padding: 14px 40px;
+    text-align: end;
+    line-height: 30px;
+ }
+
+ .calc-2-3 a {
+    text-decoration: underline;
+    font-size: 16px;
+ }
+ 
+ .sect3 {
+    padding: 14px 40px;
+ }
+
+ .sect3 form {
+    height: 6em; 
+ }
+
+ .main-info .info {
+    padding: 20px;
+ }
+
+ .last-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    gap: 25px;
+ }
+
+ .btn1 {
+    border-radius: 28px;
+    border: 1px solid black;
+    padding: 11px 24px;
+ }
+
+
+ .btn2 {
+    border-radius: 28px;
+    background-color: #80E142;
+    padding: 11px 24px;
+ }
+
+ .last-btn > * a {
+    font-size: 16px;
+    line-height: 24px;
+ }
+
+
+
+
+ 
+ 
