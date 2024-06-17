@@ -1,0 +1,26 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1f 1fr 1fr 1fr;
+}
+
+.user-1{
+    background: blue;
+    grid-column: 1/1;
+    grid-row: 1/4;
+    height: 200px;
+}
+
+.user-2{
+    background: yellow;
+    grid-column: 2/2;
+    grid-row: 2/1;
+    height: 50px;
+}
+
+.user-3{
+    background: green;
+    grid-column: 2/2;
+    grid-row: 2/4;
+    height: 150px;
+}
