@@ -1,3 +1,22 @@
+
+
+.numbering-span{
+    grid-gap: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 
+    [first-line] 30vh 
+    [second-line] 20vh 
+    [third-line] 22vh 
+    [fifth-line] 25vh 
+    [end];
+}
+
+header{
+    grid-column: 1 / 2;
+    grid-row: first-line / end;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
