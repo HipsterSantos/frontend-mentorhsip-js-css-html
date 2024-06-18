@@ -8,6 +8,8 @@
     background: blue;
     grid-column: 1/1;
     grid-row: 1/3;
+    height: 195px;
+    width: 120px;
    
 }
 
@@ -16,11 +18,20 @@
     grid-column: 2/2;
     grid-row: 2/1;
     
+    
 }
 
 .user-3{
     background: green;
     grid-column: 2/2;
     grid-row: 2/3;
-  
+}
+
+.main{
+    background: gray;
+    display: flex;
+    width: 40vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
 }
