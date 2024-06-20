@@ -149,12 +149,9 @@ body{
 .formulario div{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
-#nome-header{
-  
-}
 
 .submit-button{
     background: #0066ff;
