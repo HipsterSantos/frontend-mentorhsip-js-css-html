@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+      "title title"
+      "nav nav"
+      "main aside1"
+      "main aside2";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 1.5em;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    grid-area: title;
+  }
+  
+  .nav {
+    grid-area: nav;
+  }
+  
+  .main {
+    grid-area: main;
+  }
+  
+  .aside1 {
+    grid-area: aside1;
+  }
+  
+  .aside2 {
+    grid-area: aside2;
+  }

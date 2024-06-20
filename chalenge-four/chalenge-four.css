@@ -21,7 +21,7 @@ body{
 .box-initial{
     background: #cdc8c8;
     width: 45vw;
-    height: 70vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,20 +29,22 @@ body{
 
 .box-scren{
     background: white;
-    width: 40vw;
-    height: 62vh;
+    width: 42vw;
+    height: 89vh;
     border-radius: 7px;
     display: flex;
 }
 
 .right-side{
     background: #0066ff;
-    width: 40%;
+    width: 43%;
     border-radius: 7px 0 0 7px;
+    height: 100%;
 }
 
 .left-side{
-    width: 60%;
+    width: 57%;
+    height: 100%;
     border-radius: 0 7px 7px 0;
     display: flex;
     justify-content: center;
@@ -55,11 +57,12 @@ body{
 
 .comment-main{
     color: white;
-    padding: 25px;
-    margin: 15px 0 70px 0}
+    padding: 15px;
+    margin: 8px 0 70px 0}
 
 .comment-main h1{
     font-weight: 600;
+    font-size: 20px;
 }
 
 
@@ -70,8 +73,8 @@ body{
 
 }
 .comment-image{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
 }
 
@@ -79,10 +82,10 @@ body{
     background: #0000ff;
     color: white;
     border-radius: 7px;
-    width: 75%;
-    height: 20%;
-    margin-left: 23px;
-    padding: 15px;
+    width: 79%;
+    height: 25%;
+    margin-left: 15px;
+    padding: 10px;
 
 }
 
@@ -95,7 +98,7 @@ body{
 .box-comment p{
     font-size: 9px;
     font-weight: 200;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .info-user{
@@ -104,18 +107,20 @@ body{
 }
 
 .comment-name{
-    padding: 5px;
-    margin-right: 8px;
+    padding: 2px;
+    margin-left: 3px;
+    
 }
 
 .comment-name p{
-    font-size: 11px;
+    font-size: 8px;
     font-weight: 300;
 }
 
 .comment-star p{
     color: yellow;
-    font-size: 17px;
+    font-size: 12px;
+    margin-left: 11px;
 }
 
 
@@ -144,12 +149,9 @@ body{
 .formulario div{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
-#nome-header{
-  
-}
 
 .submit-button{
     background: #0066ff;
