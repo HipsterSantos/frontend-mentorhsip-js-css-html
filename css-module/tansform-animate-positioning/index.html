@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform, transiotion, animation </title>
+    <style>
+        .container{
+            display: flex;     
+            flex-direction: column;
+        }
+        div{
+            margin-bottom: 1em;
+            
+        }
+        .col-1{
+
+            transition: all .7s  ease-in-out;
+        }
+        .col-1:hover{
+            transition: all .7s  ease-in-out;
+            background: linear-gradient(67deg, blue 3%, red 33%);
+        }
+        .col-1{
+            background: red;
+            height: 20vh;
+            width: 10vw;
+        }
+        .col-2{
+            background: rgb(38, 85, 179);
+            height: 20vh;
+            width: 10vw;
+            
+        }
+        .col-3{
+            width: 10vw;
+            height: 20vh;
+            background: rgb(27, 148, 33);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-1">
+            col one
+        </div>
+        <div class="col-2">
+            col two
+        </div>
+        <div class="col-3">
+            three
+        </div>
+    </div>
+</body>
+</html>
