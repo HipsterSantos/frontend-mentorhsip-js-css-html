@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        /*.container {
+            display: grid;
+            grid-template-areas: "title title"
+                                 "nav   nav"
+                                 "main  aside1"
+                                 "main  aside2";
+            grid-template-columns: 2fr 1fr; /*set collumns
+            grid-template-rows: repeat(4, auto);set rows
+            grid-gap: 1.5em;
+            max-width: 1080px;
+            margin: 0 auto;
+          }
+          .col-1 .header{
+            grid-area: title;
+          }
+          .col-2{
+
+          }*/
+          .container{
+            display: grid;;
+            grid-template-columns: 1fr 1fr  1fr ;
+            grid-template-areas: 
+            "nav nav nav"
+            "section section2 section3";
+            grid-template-rows: 1fr 1fr 1fr;
+          }
+          .col-1{
+            color:#fff;
+            grid-column: nav;
+            background: red;
+          }
+          .col-2{
+            grid-column: section;
+            background: blue;
+            color:#fff;
+
+          }
+          .col-3{
+            grid-column: section2;
+            background: yellow;
+          }
+          .col-4{
+            grid-column: section3;
+            background: purple;
+          }
+
+
+
+
+          .container >div {
+            padding: .7em;
+          }
+          .container-2{
+            display: grid;
+            grid-template-columns: repeat(4, .5fr );
+            grid-template-areas: 
+            "l . . ."
+            "l . . ."
+            "l . . ."
+            "l . . ."
+            "l . . ."
+            "l . . ."
+            "l . . ."
+            "l . . ."
+            "l s t u"
+            ;
+            grid-template-rows: repeat(7,auto);
+        }
+        .col-01{
+            grid-column: l;
+            background: violet;
+        }
+        .col-02{
+            grid-column: l;
+            background: violet;
+        }
+        .col-03{
+            grid-column: l;
+            background: violet;
+        }
+        .col-04{
+            grid-column: l;
+            background: violet;
+        }
+        .col-05{
+            grid-column: l;
+            background: violet;
+        }
+        .col-06{
+            grid-column: l;
+            background: rgb(41, 167, 60);
+        }
+        .col-06{
+            grid-column: s;
+            background: rgb(41, 167, 60);
+        }
+        .col-07{
+            grid-column: t;
+            background: rgb(41, 167, 60);
+        }
+        .col-08{
+            grid-column: u;
+            background: rgb(41, 167, 60);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-1">
+            navigation
+        </div>
+        <div class="col-2">
+            main Section
+        </div>
+        <div class="col-3">
+            I'm section2-3
+        </div>
+        <div class="col-4">
+            I'm section-3-4
+        </div>
+
+
+        <p>Make L or U is impossible withou create rectangle</p>
+        <code>
+            grid-template-areas: "top  top    right"
+                     "left .      right"
+                     "left bottom bottom";
+                     grid-template-column: 1fr 1fr 1fr;
+        </code>
+    </div>
+
+    <div class="container-2">
+        <div class="col-01"></div>
+        <div class="col-02"></div>
+        <div class="col-03"></div>
+        <div class="col-03"></div>
+        <div class="col-05"></div>
+        <div class="col-06"></div>
+        <div class="col-07"></div>
+        <div class="col-08"></div>
+    </div>
+</body>
+</html>

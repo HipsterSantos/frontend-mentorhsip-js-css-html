@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implicit Grid or Explicit ?</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 500px));
+            /*grid-auto-columns: 1fr;*/
+            grid-auto-rows: auto;
+            grid-gap: 1em;
+            object-fit: cover;
+           }
+           img{
+                object-fit: container;
+                max-width: 800px;
+                max-height: 400px;
+           }
+           /*
+            img{
+            }*/ 
+           /*.img-1.figure{
+            position: inherit;
+           }
+           .img-1>figcaption{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom: 0;
+            background: rgba(0,0,0,.3);
+            color: #fff;
+
+           }*/
+    </style>
+</head>
+<body>
+    <!-- <h3>Dealing with implicit vs Explicit</h3>
+    <p>
+        implicit grid.  = allow the grid item placement algorithm to fill it for you.
+    </p>
+    <p>
+        Explicit grid = When you use the grid-template-* properties to define grid tracks, you’re creating an explicit grid.
+    </p>
+    <p>
+        grid-auto-columns and grid-auto-rows 
+    </p>
+    <p>auto-fill and the minmax()</p>
+    <p>minmax(200px,1fr),It specifies two values—a minimum size and a maximum size.</p>
+    <p>The auto-fill keyword is a special value you can provide for the repeat() func- tion. With this set, the browser will place as 
+    many tracks onto the grid as it can fi</p>
+    <p>Whether you use auto-fill or auto-fit depends on whether you want to ensure you get the expected grid track size or whether you want to make certain the length of the entire grid container is filled. I typically find I prefer auto-fit.
+
+    </p> -->
+        <div class="gallery">
+            <figure class="img-1 odd">
+                <img src="img/dm-david-45KD_9Wu5-A-unsplash.jpg" alt="">
+                <figcaption class="image-caption">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sed eos animi, provident quo pariatur fugit architecto saepe adipisci 
+                        doloremque dolorem minima minus accusamus voluptas vero omnis aut. Ipsam, ut fuga!</p>
+                </figcaption>
+            </figure>
+            <figure class="img-2 even">
+                <img src="img/jefferson-sees-xkwzWX-i18A-unsplash.jpg" alt="">
+                <figcaption class="image-caption">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sed eos animi, provident quo pariatur fugit architecto saepe adipisci 
+                        doloremque dolorem minima minus accusamus voluptas vero omnis aut. Ipsam, ut fuga!</p>
+                </figcaption>
+            </figure>
+            <figure class="img-3 odd">
+                <img src="img/payman-shojaei-kxw7q5voN3o-unsplash.jpg" alt="">
+                <figcaption class="image-caption">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sed eos animi, provident quo pariatur fugit architecto saepe adipisci 
+                        doloremque dolorem minima minus accusamus voluptas vero omnis aut. Ipsam, ut fuga!</p>
+                </figcaption>
+            </figure>
+            <figure class="img-4 even">
+                <img src="img/rupixen-5lw6CLBZlCg-unsplash.jpg" alt="">
+                <figcaption class="image-caption">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sed eos animi, provident quo pariatur fugit architecto saepe adipisci 
+                        doloremque dolorem minima minus accusamus voluptas vero omnis aut. Ipsam, ut fuga!</p>
+                </figcaption>
+            </figure>
+            <figure class="img-5 odd">
+                <img src="img/ryan-arnst--_ciMTKzBus-unsplash.jpg" alt="">
+                <figcaption class="image-caption">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sed eos animi, provident quo pariatur fugit architecto saepe adipisci 
+                        doloremque dolorem minima minus accusamus voluptas vero omnis aut. Ipsam, ut fuga!</p>
+                </figcaption>
+            </figure>
+            <figure class="img-6 even">
+                <img src="img/tobias-reich-8d5BioG1Kas-unsplash.jpg" alt="">
+                <figcaption class="image-caption">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sed eos animi, provident quo pariatur fugit architecto saepe adipisci 
+                        doloremque dolorem minima minus accusamus voluptas vero omnis aut. Ipsam, ut fuga!</p>
+                </figcaption>
+            </figure>
+            <figure class="img-7 odd">
+                <img src="img/rupixen-5lw6CLBZlCg-unsplash.jpg" alt="">
+                <figcaption class="image-caption">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sed eos animi, provident quo pariatur fugit architecto saepe adipisci 
+                        doloremque dolorem minima minus accusamus voluptas vero omnis aut. Ipsam, ut fuga!</p>
+                </figcaption>
+            </figure>
+        </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting my portfolio with grid </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-container{
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: repeat(3,auto);
+        }
+        .navigation{
+            display: flex;
+            background-color: tomato;
+            color:#fff;
+            font-weight: 600;
+            grid-column: 1/5;
+        }
+        .navigation ul {
+            list-style: none;
+            display: flex;
+        }
+        .navigation> *{
+            margin-top: auto;
+            margin-bottom: auto;
+            flex-basis: center;
+        }
+        li.logo{
+            justify-self: flex-start;
+        }
+        .left-items{
+            margin-left: auto;
+            display: flex;
+            margin-right: .4em;
+        }
+        li{
+            margin-right: .8em;
+        }
+
+        .inner-container{
+            grid-column: 1/5;
+            grid-row: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <nav class="navigation">
+            <ul>
+                <li class="logo"><a>
+                    somehto
+                </a></li>
+                <div class="left-items">
+                    <li><a href="" id="one-1">One </a></li>
+                    <li><a href="" id="two">Two</a></li>
+                    <li><a href="" id="three">Three</a></li>
+                </div>
+            </ul>
+        </nav>
+        <main class="inner-container">
+            <section class="left-side">
+                <h2>Meet our services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolor amet consectetur provident totam molestiae quam ad inventore incidunt? Non iure excepturi, ex assumenda ut dolorem qui veritatis laudantium magnam!</p>
+            </section>
+            <aside class="right-side">
+                <div>
+                    <h2>Follow me here</h2>
+                </div>
+            </aside>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
