@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .dropdown-container{
+            position: relative;
+        }
+
+        .dropdown-itself{
+            position: absolute;
+            display: none;
+            background: gray;
+            line-height: 2;
+            border-radius: 1em;
+        }
+    
+        .dropdown-itself ul{
+            list-style: none;
+        }
+        .dropdown-itself ul li{
+            maring-top: 1em;
+        }
+
+        .dropdonw-container:hover  .dropdown-itself{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdonw-container">
+        <div class="dropdown-label">
+            My menu
+        </div>
+        <div class="dropdown-itself">
+            <ul>
+                <li><a href="">Primeiro</a></li>
+                <li><a href="">Segundo</a></li>
+                <li><a href="">Terceiro</a></li>
+                <li><a href="">Quarto</a></li>
+                <li><a href="">Quinto</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="drodown-iteself"></div>
+</body>
+</html>

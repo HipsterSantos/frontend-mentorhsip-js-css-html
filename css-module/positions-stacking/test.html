@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test positioning</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100%;
+
+        }
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .one{
+            background: red;
+            color: #fff;
+        }
+        .two{
+            background: rgb(90, 170, 29);
+            color: #fff;
+        }
+        .three{
+            background: rgb(9, 79, 122);
+            color: #fff;
+        }
+        .modal-container{
+            width: 100%;
+            display: none;
+            
+        }
+        .modal-backdrop{
+            width: inherit;
+            height: auto;
+            position: fixed;
+            background: rgba(0,0,0,.2);
+            top:0;
+            bottom: 0;
+            left:0;
+            right: 0;
+        }
+        .modal-body{
+            top: 3em;
+            left: 12em;
+            position: fixed;
+            width: 500px;
+            background: #fff;
+            padding: 3em;
+            min-height:500px ;
+        }
+    </style>
+</head>
+<body>
+    (Flexbox  & grid )Layout = 
+    
+    document flow 
+    stacking containing
+
+<div class="container">
+
+    <div class="one">
+        one
+    </div>
+    <div class="two">
+        two
+    </div>
+    <div class="three">
+        three
+    </div>
+    <button id="open-modal"> open modal</button>
+
+    <div class="modal-container" id="modal-container">
+        <div class="modal-backdrop"></div>
+        <div class="modal-body">
+            <button id="close-modal">close </button>
+            <h3>This is a body </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga maiores consequuntur dolorem quidem doloribus ad explicabo voluptatem vitae? Magni reiciendis ad quos neque quo qui incidunt ducimus consequuntur eligendi iusto?</p>
+        </div>
+    </div>
+
+</div>
+<script>
+    const openBtn = document.getElementById('open-modal');
+    const closeBtn  = document.getElementById('close-modal');
+    const modalContainer = document.getElementById('modal-container')
+    
+    /* openBtn.onclick = open();*/
+    openBtn.addEventListener('click',open,false)
+    closeBtn.addEventListener('click',close,false)
+
+    function close(e){
+        console.log('close - clicked')
+        e.preventDefault()
+        modalContainer.setAttribute('style','display:none;')
+    }
+    function open(e){
+    console.log('open - clicked')
+        e.preventDefault()
+        modalContainer.setAttribute('style','display:block;')
+    }
+</script>
+
+</body>
+</html>
