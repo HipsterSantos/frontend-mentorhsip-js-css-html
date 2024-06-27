@@ -1,0 +1,145 @@
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.banner-logo{
+    width: inherit;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+}
+
+
+label.hamburguer-menu.diactivated{
+    display: none;
+}
+
+.nav-container{
+    width: inherit;
+    padding: 1em;
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+.nav-body{
+    display: flex;
+    list-style: none;
+}
+
+.nav-body>li{
+    margin-right:1em;
+}
+
+
+main.content-container{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.hero-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    /* height: 50vh; */
+}
+
+.hero-section> img {
+    width: 100%;
+    object-fit: cover;
+    height: 65vh;
+}
+.hero-section> h1,p{
+ position: absolute;
+ color: #fff !important;   
+}
+
+.hero-section h1{
+    bottom: 0;
+    right: 0;
+    left: 4em;
+    position: absolute;
+    top: 3em;
+    margin-bottom: .7em;
+    z-index: 20;
+    
+}
+.hero-section p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 4em;
+    top: 7em;
+    z-index: 19;
+}
+
+
+.articles-cards{
+display: flex;
+justify-content: space-between;
+
+}
+
+.articles-cards article{
+    /* margin: .8em auto ; */
+    color: #000 !important;
+}
+
+article > p,h2{
+
+}
+
+/* Applying media queries  */
+
+
+@media  (max-width:768px){
+
+    .container{ 
+        /* background-color: red; */
+        position: relative;
+    }
+    .banner-logo {
+        flex-direction: row;
+    }
+    .banner-logo .hamburguer-menu.diactivated{
+        display: block;
+        margin-left: auto;
+    }
+    .nav-container{
+        display: none;
+    }
+
+    .banner-logo .hamburguer-menu.diactivated  ~ .nav-container{
+        display: flex;
+    }
+    #for-nav:checked ~ .nav-container {
+        display: flex;
+        background: #fff;
+        width: inherit;
+        color: #000;
+        position: absolute;
+        top: 3.5em;
+        z-index: 101;
+        /* position: absolute; */
+        /* top:3em; */
+    }
+    #for-nav:checked ~ .nav-container ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #for-nav:checked ~ .nav-container ul li{
+        margin-top: .5em;
+        border-bottom: 1px solid #000;
+    }
+    #for-nav:checked ~ .nav-container ul li:last-child{
+        border:none;
+    }
+}

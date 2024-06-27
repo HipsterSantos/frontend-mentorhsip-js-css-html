@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container{
+    position: relative;
+    left:30vw;
+    top: 10vh;
+    width: 300px;
+    height: auto;
+    box-shadow: 23px 23px 34px rgba(0,0,0,.3);
+    transition: all .7s ease-in;
+}
+.card-container:hover{
+    transform: scale(1.5);
+}
+.card-name,.description{
+    padding: 1em;
+}
+.description{
+    height: 0vh;
+    opacity: 0;
+    transition: all .4s ease-in-out ;
+    
+}
+.card-name{
+    position: relative;
+}
+.after-content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    transform:scale(.09) ;
+    border: 22em solid #000;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: yellow;
+}
+.after-content::after{
+    content: "x";
+    display: block;
+}
+.main-descriptione{
+    transition: all .4s ease-in-out ;
+}
+.main-descriptione:hover{
+    height: auto;
+}
+.card-name:hover + .description {
+    /* color: red;
+    displ */
+    /* transition: all 3s ease; */
+    /* display: block; */
+    padding-top: 2em;
+    height: auto;
+    opacity: 1;
+}
+
+img{
+    width: inherit;
+    height: inherit;
+}
+
+.chat-bot-container{
+
+}
+
+#click-me:checked + .chat-bot-container{
+    color: red;
+}

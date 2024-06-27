@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,*::before,*::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: auto;
+        }
+        .container header{
+            height: 30vh;
+            width: 100%;
+        }
+        .container nav{
+            background: #727cdf;
+            display: flex;
+            width: inherit;
+            padding: 1em 0;
+            color: #fff;
+            height: auto;
+        }
+        nav ul {
+            width: inherit;
+            list-style-type: none;
+            display: flex;
+
+        }
+        ul .menu-list{
+            display: flex;
+            justify-content: space-around;
+        }
+        .logo{
+            margin-left: 1em;
+        }
+        .menu-list{
+            margin-left: 2em;
+            margin-right: auto;
+        }
+        .menu-list{
+            margin-left: 1em;
+            color: #fff;
+        }
+        .menu-list a {
+            color: #fff;
+        }
+        .search-icon{
+            margin-right: 1em;
+        }
+        .container header>*{
+            width: inherit;
+        }
+    </style>
+</head> 
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <div class="logo">
+                    <li class="logo">Logo-here<a href=""></a></li>
+                </div>
+                <div class="menu-list">
+                    <li><a href="">Galeria</a></li>
+                    <li><a href="">Servicoes</a></li>
+                    <li><a href="">about me</a></li>
+                </div>
+                <div class="search-icon">
+                    <span>search icon</span>
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <img class="hero-section" src="./img/img-1.jpg">
+        </header>
+    </div>
+</body>
+</html>
