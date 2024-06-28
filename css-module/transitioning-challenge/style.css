@@ -1,0 +1,275 @@
+html{
+    font-family: "Inter", sans-serif;
+}
+.container{
+    width: 450px;
+    margin: 2em 15em;
+    background: #27262E;
+    max-height: 550px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.container h1{
+    color: #fff;
+    text-align: center;
+}
+
+.container .item-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*Styling item one */
+.container .item-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #F0F3F5;
+    border-radius: .8em;
+}
+.container .item-1 .open-from-cover, .item-1-cover-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.open-form-cover{
+    border-radius: .8em;
+    justify-content: space-between;
+    background: #CED3C4;
+
+}
+
+.container .item-1 .open-from-cover img{
+    width: 71px;
+    height: 68px;
+    margin: auto;
+    padding-top: 5em;
+}
+.container .item-1 .open-from-cover h3,i{
+    color: #000;
+    margin: auto;
+}
+
+.item-1-cover-container{
+    
+}
+
+
+.container .item-1 .close-from-body{
+    display: none;
+
+}
+
+/*
+ from item-1 when clicked out or in 
+*/
+
+.close-from-body{
+    width: 100%;
+    background: #F0F3F5;
+    padding: .2em;
+    border-radius: .5em;
+    transition: all 3s ease-in;
+    animation: closer .3 ease-in infinite;
+    
+}
+.item-1-body{
+    flex-direction: column;
+    display: flex;
+    width: inherit;
+    align-items: center;
+}
+
+.item-1-body-cover{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.item-1-body-img{
+    width: 400px;
+    aspect-ratio: auto 400 / 343;
+    height: 343px;
+    object-fit: cover;
+}
+
+.item-1-body-content{
+    padding: -1em;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6em;
+}
+
+.title-and-icon{
+    display: flex;
+    justify-content: space-between;
+    color: #000 !important;
+}
+
+.item-1-description{ 
+    padding: .4em
+}
+
+
+
+
+.close-from-body  img{
+    object-fit: cover;
+}
+
+input[id="item-1"]:checked ~ .open-from-cover{
+    display: none;
+}
+
+input[id="item-1"]:checked ~ .close-from-body {
+    display: block;
+    transition: all 3s ease-in ;
+    animation: closer .3 ease-in infinite;
+    height: auto;
+    width: 100%;
+}
+
+@keyframes closer {
+    0%,10%,20%{
+        background: #fff;
+    }
+    50%{
+        background: red;
+    }
+}
+
+
+
+/*
+
+container item-2
+
+*/
+
+.container .item-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+
+
+/*Styling item one */
+.container .item-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #F0F3F5;
+    border-radius: .8em;
+}
+.container .item-2 .open-from-cover, .item-2-cover-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.open-form-cover{
+    border-radius: .8em;
+    justify-content: space-between;
+    background: #CED3C4;
+
+}
+
+.container .item-2 .open-from-cover img{
+    width: 71px;
+    height: 68px;
+    margin: auto;
+    padding-top: 5em;
+}
+.container .item-2 .open-from-cover h3,i{
+    color: #000;
+    margin: auto;
+}
+
+.item-2-cover-container{
+    
+}
+
+
+.container .item-2 .close-from-body{
+    display: none;
+
+}
+
+/*
+ from item-1 when clicked out or in 
+*/
+
+.close-from-body{
+    width: 100%;
+    background: #F0F3F5;
+    padding: .2em;
+    border-radius: .5em;
+    transition: all 3s ease-in;
+    animation: closer .3 ease-in infinite;
+    
+}
+.item-2-body{
+    flex-direction: column;
+    display: flex;
+    width: inherit;
+    align-items: center;
+}
+
+.item-2-body-cover{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.item-2-body-img{
+    width: 400px;
+    aspect-ratio: auto 400 / 343;
+    height: 343px;
+    object-fit: cover;
+}
+
+.item-2-body-content{
+    padding: -1em;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6em;
+}
+
+.title-and-icon{
+    display: flex;
+    justify-content: space-between;
+    color: #000 !important;
+}
+
+.item-2-description{ 
+    padding: .4em
+}
+
+
+
+
+.close-from-body  img{
+    object-fit: cover;
+}
+
+input[id="item-2"]:checked ~ .open-from-cover{
+    display: none;
+}
+
+input[id="item-2"]:checked ~ .close-from-body {
+    display: block;
+    transition: all 3s ease-in ;
+    animation: closer .3 ease-in infinite;
+    height: auto;
+    width: 100%;
+}
