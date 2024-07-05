@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        nav{
+            display:flex;
+
+            ul{
+
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+
+            }
+        }
+        li{
+            margin-left: .3em;
+        }
+        .textos{
+            margin: auto;
+            display: flex;
+            color: #fff;
+            background: #000;
+        }
+        .log{
+            padding: 1;
+            background-color: red;
+            margin-left: .4em;
+            margin-right: auto;
+        }
+        .buttons{
+            margin-left: auto;
+            margin-right: .4em;
+            background-color: blue;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <nav>
+            <ul class="nav-container">
+                <div class="logo"></div>
+                <div class="textos"></div>
+                <div class="buttons"></div>
+            </ul>
+        </nav>    
+    </main>
+
+    <script>
+        
+        const menu =  {
+            logo: '',
+            texts: [
+                'Comprar',
+                'About',
+                'Contacts',
+                'shoppinhg',
+                'gallery'
+            ],
+            buttons:[
+            {
+                'login': {
+                    color: 'white',
+                    bg: 'yellow',
+                    p: '1em 3em'
+                },
+                'profile': {
+                    avatar: './img/avatar',
+                    width: 80,
+                    height: 60
+                },
+                'Increver-se':{
+                    color: 'white',
+                    bg: 'red',
+                    p: '1em 3em'
+                }
+            }
+            
+            ]
+        }
+        const isLogged = true;
+
+        const logoContainer = document.getElementsByClassName('logo');
+        const navTextContainer = document.getElementsByClassName('textos')[0];
+        
+        const buttonContainer = document.querySelector('.buttons');
+        const button = document.createElement('button')
+        const btns = Object.keys(menu.buttons[0])
+
+        for (let start = 0; start <= btns.lenght-1; start+=1 ){
+            console.log('reached here',)    
+            
+        }
+
+
+        for (let initial = 0 ;initial <=  menu.texts.length-1; initial+=1){
+            
+            const li = document.createElement('li');
+            li.textContent = menu.texts[initial];
+            navTextContainer.appendChild(li)
+        }
+        
+
+
+        
+
+
+    </script>
+</body>
+</html>
