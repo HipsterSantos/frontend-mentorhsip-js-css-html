@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealing with events</title>
+    <style>
+        .container{
+            width: 100%;
+            margin: 0 15em;
+            .progress-bar{
+                width: 500px;
+                height: 2em;
+                background: red;
+                .movebar{
+                    width: 10%;
+                    height: inherit;
+                    background: blue;
+                }
+                button{
+                    border: none;
+                    padding: 1em;
+                    color:#fff;
+                    background-color: #000;
+                    border-radius: .5em;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="progress-bar" class="progress-bar">
+            <div id="movebar" class="movebar"></div>
+        </div>
+        <br>
+        <p id="show-date"> today date is </p>
+        <p id="show-minutes"> current minutes is </p>
+        <p id="update-realtime">
+
+        </p>
+        <button id="clicke-me">Clic here to get start </button>
+    </div>
+    <script>
+        const progressbar_value  = 10;
+        const progressbar = document.getElementById('movebar');
+        console.log('value = ', progressbar.getAttribute('width'))
+        
+        const counter = 0 ;
+        function realtimeUpdate(){
+            progressbar.style = ` width: ${++counter}%`;
+        }
+        
+        setInterval(realtimeUpdate,100)
+        removeInterval(realtimeUpdate)
+
+        const button = document.getElementById('clicke-me');
+        
+        button.addEventListener('mousemove', ()=>{
+            //
+        })
+        
+        button.removeEventListener('click')
+
+        
+
+        button.onclick = function(){
+            alert(` the width of move bar is ${progressbar}`)
+        } 
+    </script>
+</body>
+</html>
