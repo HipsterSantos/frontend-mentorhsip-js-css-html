@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list-item{
+            width:10%;
+            background: #000;
+            border-radius: 50%;
+            padding: 1em;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+            &:nth-child(even){
+                background: red;
+            }
+            &:nth-child(odd){
+                background: blue;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+
+    <script>
+        const discordServers = [
+
+                        {
+                            name: 'Webdevelopment',
+                            imgURL: '',
+                            active: false,
+                            author: 'Ginnefr',
+                            id: 'fa737fac3838fa838'
+                        },
+                        {
+                            name: 'Python',
+                            imgURL: '',
+                            author: 'Jvelinho',
+                            active: false,
+                            id: 'fa737fac3838fa838'
+                        },
+                        {
+                            name: 'Javascript',
+                            imgURL: '',
+                            active: false,
+                            author: 'Nike',
+                            id: 'fa737fac3838fa838'
+                        },
+                        {
+                            name: 'TechCommunity',
+                            imgURL: '',
+                            author: 'Badboys',
+                            active: false,
+                            id: 'fa737fac3838fa838'
+                        },
+                        {
+                            name: 'Web',
+                            imgURL: '',
+                            author: 'facebook',
+                            active: false,
+                            id: 'fa737fac3838fa838'
+                        },
+                        {
+                            name: 'React',
+                            imgURL: '',
+                            author: 'Google',
+                            active: false,
+                            id: 'fa737fac3838fa838'
+                        },
+];
+
+    const container = document.querySelector('.container'); // meu contgainer
+    
+    discordServers.forEach( async (item,index)=>{
+        const li = document.createElement('li') // li - list item vazio
+        li.className = 'list-item' // li vai ter uma class list-item que por consequent .list-item (<style></style>)
+        // document.writeln(`<li><a> ${item.name}</a></li>`)
+        li.innerHTML = `<a href='#' class='item-da-lista-${index}'> ${item.name}`
+        container.appendChild(li)   
+    })
+    
+
+
+    </script>
+</body>
+</html>
